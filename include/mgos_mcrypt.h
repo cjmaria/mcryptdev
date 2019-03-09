@@ -9,6 +9,8 @@
 extern "C" {
 #endif /* __cplusplus */
 
+bool mgos_mcrypt_init(void);
+
 int add(int a, int b);
 //uint8_t generateRandom32();
 int generateRandom();
