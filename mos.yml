@@ -1,0 +1,22 @@
+author: christopher.maria@mobius-labs.com
+description: A MongooseOS library for security and encryption on the ESP8266 and ATECC508a
+type: lib
+version: 0.0.1
+
+platforms: [ esp32, esp8266 ]
+
+sources:
+  - src
+includes:
+  - include
+libs:
+  - origin: https://github.com/mongoose-os-libs/i2c
+tags:
+  - c
+  - js
+  - encryption
+  - security
+  - atecc508a
+  - cryptoauthlib
+
+manifest_version: 2018-09-24
