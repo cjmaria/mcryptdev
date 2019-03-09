@@ -1,5 +1,5 @@
-#ifndef CS_MOS_LIBS_MCRYPT_SRC_MCRYPT_H_
-#define CS_MOS_LIBS_MCRYPT_SRC_MCRYPT_H_
+#ifndef CS_MOS_LIBS_MCRYPTDEV_SRC_MCRYPTDEV_H_
+#define CS_MOS_LIBS_MCRYPTDEV_SRC_MCRYPTDEV_H_
 
 #include <stdbool.h>
 #include <stdlib.h>
@@ -9,7 +9,7 @@
 extern "C" {
 #endif /* __cplusplus */
 
-bool mgos_mcrypt_init(void);
+bool mgos_mcryptdev_init(void);
 
 int add(int a, int b);
 //uint8_t generateRandom32();
@@ -31,4 +31,4 @@ private:
 }
 #endif /* __cplusplus */
 
-#endif /* CS_MOS_LIBS_MCRYPT_SRC_MCRYPT_H_ */
+#endif /* CS_MOS_LIBS_MCRYPTDEV_SRC_MCRYPTDEV_H_ */

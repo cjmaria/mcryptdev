@@ -1,6 +1,6 @@
-#include "mgos_mcrypt.h"
+#include "mgos_mcryptdev.h"
 
-bool mgos_mcrypt_init(void) {
+bool mgos_mcryptdev_init(void) {
     return true;
 }
 
