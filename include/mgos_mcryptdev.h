@@ -12,7 +12,7 @@ extern "C" {
 bool mgos_mcryptdev_init(void);
 
 int add(int a, int b);
-//uint8_t generateRandom32();
+uint8_t generateRandom32();
 int generateRandom();
 /*
 class RandomGenerator{
