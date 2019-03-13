@@ -18,8 +18,8 @@ uint8_t generateRandom32(){
 }
 
 int generateRandom(){
-    return (int) generateRandom32();
-    //return 255;
+    //return (int) generateRandom32();
+    return 255;
     //RandomGenerator rg;
     //return rg.random8();
 }
