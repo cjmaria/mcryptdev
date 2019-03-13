@@ -14,7 +14,6 @@ uint8_t generateRandom32(){
     //uint8_t random_number[32];
     atcab_init(&cfg_ateccx08a_i2c_default);
     atcab_random(random_number);
-    
     return *random_number;
 }
 
