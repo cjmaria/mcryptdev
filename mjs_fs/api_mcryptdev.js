@@ -9,5 +9,6 @@ let mcryptdev = {
         return I2C.read(bus_addr, I2Caddr, 2, true);
     },
     generateRandom: ffi('int generateRandom()'),
+    generateRandom32: ffi('int generateRandom32()'),
     
 };
