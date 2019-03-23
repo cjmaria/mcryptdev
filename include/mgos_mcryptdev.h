@@ -16,7 +16,7 @@ int add(int a, int b);
 uint8_t generateRandom32();
 int generateRandom();
 
-
+/*
 class RandomGenerator{
 public:
     RandomGenerator();
@@ -26,7 +26,7 @@ public:
 
 private:
     uint8_t* uint8;
-};
+};*/
 
 
 #ifdef __cplusplus

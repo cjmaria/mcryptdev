@@ -18,6 +18,7 @@ struct uintLayers {
   uint16_t u16;
 };
 
+/*
 static const struct mjs_c_struct_member mjsUintInterface[] = {
   {"i8", offsetof(struct uintLayers, i8), MJS_STRUCT_FIELD_TYPE_INT8, NULL},
   {"i16", offsetof(struct uintLayers, i16), MJS_STRUCT_FIELD_TYPE_INT16, NULL},
@@ -28,7 +29,7 @@ static const struct mjs_c_struct_member mjsUintInterface[] = {
 
 const struct mjs_c_struct_member *getMjsUintInterface(void) {
   return mjsUintInterface;
-};
+};*/
 
 uint8_t generateRandom32(){
     uint8_t* random_number = (uint8_t*) malloc(sizeof(uint8_t[32]));
@@ -47,17 +48,19 @@ int generateRandom(){
     //RandomGenerator rg;
     //return rg.random8();
 }
+/*
 
 RandomGenerator::RandomGenerator(){
     uint8 = (uint8_t*) malloc(sizeof(uint8_t));
-}
+}*/
 void RandomGenerator::destroy(){
     delete uint8;
 }
+/*
 RandomGenerator::~RandomGenerator(){
     destroy();
 }
-
+*/
 int RandomGenerator::random8(){
     atcab_init(&cfg_ateccx08a_i2c_default);
     atcab_random(uint8);
