@@ -6,12 +6,7 @@
 typedef unsigned __int8 uint8_t;
 typedef unsigned __int32 uint32_t;
 #else
-#if defined(__FreeBSD__) && __FreeBSD__ < 5
-/* FreeBSD 4 doesn't have stdint.h file */
-#include <inttypes.h>
-#else
-#include <stdint.h>
-#endif
+    #include <stdint.h>
 #endif
 
 #include <sys/types.h> /* This will likely define BYTE_ORDER */
