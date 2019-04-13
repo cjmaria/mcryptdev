@@ -3,18 +3,36 @@
 
 #include <stdbool.h>
 #include <stdlib.h>
-#include "cryptoauthlib.h"
+
 
 
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
 
-bool mgos_mcryptdev_init(void);
+/**
+ * Function: encrypt
+ * data:     Data to be encrypted
+ * len:      Length of the data to be encrypted
+ * key:      Symmetric key
+ * out_len:  Pointer to output length variable
+ * Returns:  Encrypted data or %NULL on failure
+ *
+ * Caller is responsible for freeing the returned buffer.
+ */
+void * encrypt(const void * data, size_t len, const void * key, size_t * out_len);
 
-int add(int a, int b);
-uint8_t generateRandom32();
-int generateRandom();
+/**
+ * Function: decrypt
+ * data:     Data to be decrypted
+ * len:      Length of the data to be decrypted
+ * key:      Symmetric key
+ * out_len:  Pointer to output length variable
+ * Returns:  Decrypted data or %NULL on failure
+ *
+ * Caller is responsible for freeing the returned buffer.
+ */
+void * decrypt(const void * data, size_t len, const void * key, size_t * out_len);
 
 #ifdef __cplusplus
 }

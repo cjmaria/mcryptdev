@@ -1,5 +1,5 @@
 author: christopher.maria@mobius-labs.com
-description: A MongooseOS library for security and encryption on the ESP8266 and ATECC508a
+description: A fast XXTEA implementation
 type: lib
 version: 0.0.1
 
@@ -16,7 +16,6 @@ tags:
   - js
   - encryption
   - security
-  - atecc508a
-  - cryptoauthlib
+
 
 manifest_version: 2018-09-24
