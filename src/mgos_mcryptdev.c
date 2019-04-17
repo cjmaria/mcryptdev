@@ -213,3 +213,7 @@ void * decrypt(const void * data, size_t len, const void * key, size_t * out_len
     FIXED_KEY
     return xxtea_ubyte_decrypt((const uint8_t *)data, len, fixed_key, out_len);
 }
+
+bool mgos_mcryptdev_init(void) {
+    return true;
+}

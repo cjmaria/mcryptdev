@@ -1,6 +1,7 @@
 #ifndef CS_MOS_LIBS_MCRYPTDEV_SRC_MGOS_MCRYPTDEV_H_
 #define CS_MOS_LIBS_MCRYPTDEV_SRC_MGOS_MCRYPTDEV_H_
 
+
 #include <stdbool.h>
 #include <stdlib.h>
 
@@ -9,6 +10,8 @@
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
+
+
 
 /**
  * Function: encrypt
@@ -33,6 +36,8 @@ void * encrypt(const void * data, size_t len, const void * key, size_t * out_len
  * Caller is responsible for freeing the returned buffer.
  */
 void * decrypt(const void * data, size_t len, const void * key, size_t * out_len);
+
+bool mgos_mcryptdev_init(void);
 
 #ifdef __cplusplus
 }
