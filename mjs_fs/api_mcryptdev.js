@@ -1,6 +1,4 @@
 load("api_i2c.js")
-// I2C address for the crypto-chip, atecc508a is usually 96
-let I2Caddr = 96;
 let mcryptdev = {
     //add: ffi('int add(int, int)'),
     //readInitBit: function(){
