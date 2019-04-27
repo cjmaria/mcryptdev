@@ -37,6 +37,8 @@ void * encrypt(const void * data, size_t len, const void * key, size_t * out_len
  */
 void * decrypt(const void * data, size_t len, const void * key, size_t * out_len);
 
+char* testObj();
+
 bool mgos_mcryptdev_init(void);
 
 #ifdef __cplusplus

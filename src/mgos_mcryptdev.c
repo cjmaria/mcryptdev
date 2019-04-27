@@ -248,9 +248,3 @@ mgos_config_wifi_sta_mcrypt* init_test(){
     return mgos_config_wifi_sta_mcrypt_create("MyCppObjectWorks!");
 }
 
-char* testObj(){
-    mgos_config_wifi_sta_mcrypt* m = mgos_config_wifi_sta_mcrypt_create("MyCppObjectWorks!");
-    char* ret = mgos_config_wifi_sta_mcrypt_getpass(m);
-    mgos_config_wifi_sta_mcrypt_destroy(m);
-    return ret;
-}
