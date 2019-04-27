@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "inttypes.h": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "mgos_config_wifi_sta_mcrypt_wrapper.h": "c"
     }
 }

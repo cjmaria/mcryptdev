@@ -1,5 +1,7 @@
 
 #include "mgos_mcryptdev.h"
+#include "mgos_config_wifi_sta_mcrypt_wrapper.h"
+
 
 #include <string.h>
 #if defined(_MSC_VER) && _MSC_VER < 1600
@@ -216,4 +218,15 @@ void * decrypt(const void * data, size_t len, const void * key, size_t * out_len
 
 bool mgos_mcryptdev_init(void) {
     return true;
+}
+
+mgos_config_wifi_sta_mcrypt* init_test(){
+    return mgos_config_wifi_sta_mcrypt_create("MyCppObjectWorks!");
+}
+
+char* testObj(){
+    mgos_config_wifi_sta_mcrypt* m = mgos_config_wifi_sta_mcrypt_create("MyCppObjectWorks!");
+    char* ret = mgos_config_wifi_sta_mcrypt_getpass(m);
+    mgos_config_wifi_sta_mcrypt_destroy(m);
+    return ret;
 }
