@@ -1,6 +1,6 @@
 
 #include "mgos_mcryptdev.h"
-#include "mgos_config_wifi_sta_mcrypt_wrapper.h"
+//#include "mgos_config_wifi_sta_mcrypt_wrapper.h"
 
 
 #include <string.h>
