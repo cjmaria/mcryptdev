@@ -243,8 +243,9 @@ void * decrypt(const void * data, size_t len, const void * key, size_t * out_len
 bool mgos_mcryptdev_init(void) {
     return true;
 }
-
+/*
 mgos_config_wifi_sta_mcrypt* init_test(){
     return mgos_config_wifi_sta_mcrypt_create("MyCppObjectWorks!");
 }
+*/
 
