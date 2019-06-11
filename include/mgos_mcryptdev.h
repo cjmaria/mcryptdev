@@ -37,7 +37,7 @@ void * encrypt(const void * data, size_t len, size_t * out_len);
  */
 void * decrypt(const void * data, size_t len, size_t * out_len);
 
-const char *device_key = "eOe+jn5rHZ2oNKIiY2I4mxZgsfucSJM97Rd/eFis9HU=";
+const uint8_t *device_key = "eOe+jn5rHZ2oNKIiY2I4mxZgsfucSJM97Rd/eFis9HU=";
 
 bool mgos_mcryptdev_init(void);
 
