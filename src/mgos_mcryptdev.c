@@ -206,11 +206,11 @@ static uint8_t * xxtea_ubyte_decrypt(const uint8_t * data, size_t len, const uin
 // public functions
 
 void * encrypt(const void * data, size_t len, size_t * out_len) {
-    return xxtea_ubyte_encrypt((const uint8_t *)data, len, device_key, out_len);
+    return xxtea_ubyte_encrypt((const uint8_t *)data, len, (uint8_t*) device_key, out_len);
 }
 
 void * decrypt(const void * data, size_t len, size_t * out_len) {
-    return xxtea_ubyte_decrypt((const uint8_t *)data, len, device_key, out_len);
+    return xxtea_ubyte_decrypt((const uint8_t *)data, len, (uint8_t*) device_key, out_len);
 }
 
 bool mgos_mcryptdev_init(void) {
