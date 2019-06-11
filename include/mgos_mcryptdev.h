@@ -23,7 +23,7 @@ extern "C" {
  *
  * Caller is responsible for freeing the returned buffer.
  */
-void * encrypt(const void * data, size_t len, const void * key, size_t * out_len);
+void * encrypt(const void * data, size_t len, size_t * out_len);
 
 /**
  * Function: decrypt
@@ -35,7 +35,7 @@ void * encrypt(const void * data, size_t len, const void * key, size_t * out_len
  *
  * Caller is responsible for freeing the returned buffer.
  */
-void * decrypt(const void * data, size_t len, const void * key, size_t * out_len);
+void * decrypt(const void * data, size_t len, size_t * out_len);
 
 const char *device_key = "eOe+jn5rHZ2oNKIiY2I4mxZgsfucSJM97Rd/eFis9HU=";
 
