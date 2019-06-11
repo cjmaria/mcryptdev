@@ -206,21 +206,15 @@ static uint8_t * xxtea_ubyte_decrypt(const uint8_t * data, size_t len, const uin
 // public functions
 
 void * encrypt(const void * data, size_t len, const void * key, size_t * out_len) {
-    FIXED_KEY
-    return xxtea_ubyte_encrypt((const uint8_t *)data, len, fixed_key, out_len);
+    return xxtea_ubyte_encrypt((const uint8_t *)data, len, device_key, out_len);
 }
 
 void * decrypt(const void * data, size_t len, const void * key, size_t * out_len) {
-    FIXED_KEY
-    return xxtea_ubyte_decrypt((const uint8_t *)data, len, fixed_key, out_len);
+    return xxtea_ubyte_decrypt((const uint8_t *)data, len, device_key, out_len);
 }
 
 bool mgos_mcryptdev_init(void) {
     return true;
 }
-/*
-mgos_config_wifi_sta_mcrypt* init_test(){
-    return mgos_config_wifi_sta_mcrypt_create("MyCppObjectWorks!");
-}
-*/
+
 
